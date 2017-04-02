@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 背景 -->
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#cbc7a1" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+
+    <!-- android:secondaryProgress用のDrawable -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <color android:color="#9f00" />
+        </clip>
+    </item>
+
+    <!-- android:progress用のDrawable -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="#53c0dd" />
+                <corners android:radius="4dp" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>
+
+    <!--http://qiita.com/niusounds/items/03a40880c5ec9c7f1505--><!--http://stackoverflow.com/questions/18800290/how-to-change-progressbar-color-->

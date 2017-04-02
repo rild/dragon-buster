@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <rotate
+            android:fromDegrees="10"
+            android:toDegrees="10"
+            android:pivotX="-40%"
+            android:pivotY="87%" >
+            <shape
+                android:shape="rectangle" >
+                <stroke android:color="#000000" android:width="10dp"/>
+
+            </shape>
+
+        </rotate>
+
+    </item>
+</selector>
+
+    <!--http://stackoverflow.com/questions/29094070/how-to-create-parallelogram-shape-background-->

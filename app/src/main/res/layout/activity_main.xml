@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/battle_background"
+    android:orientation="vertical"
+    tools:context="rimp.rild.com.android.dragonbuster.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/game_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red Dragon"
+            android:textColor="#f4f4f4"
+            android:textSize="24sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp" />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <RelativeLayout
+            android:id="@+id/battle_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/imageView_dragon"
+                android:layout_width="288dp"
+                android:layout_height="288dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/dragon" />
+
+            <ImageView
+                android:id="@+id/imageView_player"
+                android:layout_width="144dp"
+                android:layout_height="144dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/player_1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/battle_main_effect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/enemy_effect"
+                android:layout_width="288dp"
+                android:layout_height="288dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="38dp"
+                android:src="@drawable/fire" />
+
+            <ImageView
+                android:id="@+id/player_effect"
+                android:layout_width="144dp"
+                android:layout_height="144dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/battle_main_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:id="@+id/linearLayout2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginStart="35dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="4dp"
+                    android:text="Red Dragon"
+                    android:textColor="#f4f4f4"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/enemy_hp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:text="HP: "
+                        android:textColor="#f4f4f4"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/enemy_hp_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:text="99999"
+                        android:textColor="#f4f4f4"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:id="@+id/linearLayout"
+                android:layout_marginRight="29dp"
+                android:layout_marginEnd="29dp"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="139dp">
+
+                <TextView
+                    android:id="@+id/textView_player"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="4dp"
+                    android:text="Player"
+                    android:textColor="#f4f4f4"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/player_hp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:text="HP: "
+                        android:textColor="#f4f4f4"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/player_hp_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:text="500"
+                        android:textColor="#f4f4f4"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/button_restart"
+            android:layout_width="96dp"
+            android:layout_height="54dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentBottom="true"
+            android:background="#3d3d3d"
+            android:gravity="center"
+            android:text="Restart"
+            android:onClick="restart"
+            android:textColor="#f4f4f4"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/button_attck"
+            android:layout_width="128dp"
+            android:layout_height="54dp"
+            android:background="#3d3d3d"
+            android:gravity="center"
+            android:text="Attack"
+            android:onClick="attack"
+            android:textColor="#f4f4f4"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="54dp"
+            android:background="#3d3d3d"
+            android:padding="4dp"
+            android:onClick="fire"
+            android:src="@drawable/fire"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/button_attck"
+            android:layout_toEndOf="@+id/button_attck"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp" />
+    </RelativeLayout>
+
+</LinearLayout>
